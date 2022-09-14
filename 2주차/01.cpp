@@ -9,19 +9,22 @@ int main()
 	cout.tie(NULL);
 	char word;
 	int mo = 0, ja = 0;
-	while (cin >>word )
+
+	cout << "영문자를 입력하고 ctrl+z를 치세요\n";
+
+	while (cin >> word)
 	{
-		if (word >= 65 && word <= 90)
+		if (word < 97 || word>122)
 		{
 			cout << "Check to alphabet\n";
 			continue;
 		}
-		if (word == 'a' || word == 'e' || word == 'i' || word == 'o' || word == 'u')
+		switch (word)
 		{
+		case 'a': case 'i':  case 'e':  case 'o':  case 'u':
 			mo++;
-		}
-		else // 입력을 알파벳만 받았다는 가정하에
-		{
+			break;
+		default:
 			ja++;
 		}
 	}
