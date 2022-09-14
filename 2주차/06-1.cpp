@@ -76,6 +76,7 @@ int main(void)
         {
             check_normal[i] = new int[NORMAL_SIZE];
         }
+        
         Init(map_normal, check_normal, NORMAL_SIZE, NORMAL_BOMB_COUNT); //맵초기화 
         AroundBomb(map_normal, NORMAL_SIZE);
         Print(map_normal, check_normal, NORMAL_SIZE, 2); //맵출력함수 
