@@ -25,6 +25,5 @@ int main()
 	
 	cout<<"갯수는 : "<<counting; 
 	
-	
 	return 0;
 }
